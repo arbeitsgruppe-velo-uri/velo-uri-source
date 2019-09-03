@@ -1,0 +1,6 @@
+{% macro render_news_entry(entry, from_index=false) %}
+  <h2><a href="{{ entry | url }}">{{ entry.title }}</a></h2>
+  <p>{{ entry.author }} am {{ entry.pub_date }}</p>
+  <hr/>
+  <p>{{ entry.body }}</p>
+{% endmacro %}
