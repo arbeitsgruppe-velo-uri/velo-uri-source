@@ -23,7 +23,7 @@ lektor server
 activate velo-uri_lektor_env
 lektor quickstart
 lektor server
-lektor build -O ..\velo-uri.github.io
+lektor build -O temp
 ```
 
 ## Deploy
