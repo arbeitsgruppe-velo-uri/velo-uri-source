@@ -10,7 +10,7 @@ conda env create -f environment.yml
 ## Develop
 
 ```
-activate velo-uri_lektor_env
+conda activate velo-uri_lektor_env
 lektor server
 ```
 

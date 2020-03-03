@@ -7,42 +7,40 @@
     <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<!-- Page Info -->
-	<title>Velo</title>
+	<title>Arbeitsgruppe Velo Uri</title>
 	<meta name="description" content="Arbeitsgruppe Velo Uri">
-
-
 	<!-- Styles -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" href="{{ '/static/style.css'|asseturl }}">
 	<link rel="stylesheet" href="{{ '/static/newstyle.css'|asseturl }}">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 
 <body>
 
-<header class="header">
-	<div class="wrap">
+	<header class="header">
+		<div class="wrap">
 
-  <a href="/" class="header__title cc-active" title="Arbeitsgruppe Velo Uri">AG Velo Uri</a>
-  <input class="menu-btn" type="checkbox" id="menu-btn" />
-  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-  <ul class="menu">
+	<a href="/" class="header__title cc-active" title="Arbeitsgruppe Velo Uri">AG Velo Uri</a>
+	<input class="menu-btn" type="checkbox" id="menu-btn" />
+	<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+	<ul class="menu">
 
-        {% for href, title in [
-          ['/news', 'News'],
-          ['/projects', 'Projekte'],
-          ['/about', 'About'],
-          ['/contact', 'Kontakt']
-        ] %}
-          <li{% if this.is_child_of(href) %} class="active"{% endif
-            %}><a href="{{ href|url }}">{{ title }}</a></li>
-        {% endfor %}
-  </ul>
-  </div>
-</header>
+			{% for href, title in [
+			['/news', 'News'],
+			['/projects', 'Projekte'],
+			['/about', 'About'],
+			['/contact', 'Kontakt']
+			] %}
+			<li{% if this.is_child_of(href) %} class="active"{% endif
+				%}><a href="{{ href|url }}">{{ title }}</a></li>
+			{% endfor %}
+	</ul>
+	</div>
+	</header>
 
 	
 	<div class="page">
