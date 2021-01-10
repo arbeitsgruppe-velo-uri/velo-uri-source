@@ -1,5 +1,3 @@
 [project]
 name = velo-uri
 url = https://www.velo-uri.ch
-[servers.ghpages]
-target = ghpages+https://velo-uri:meinV3l0!!@arbeitsgruppe-velo-uri/arbeitsgruppe-velo-uri.github.io?cname=www.velo-uri.ch
