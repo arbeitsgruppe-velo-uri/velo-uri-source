@@ -1051,12 +1051,12 @@ section {
 }
 @media only screen and (min-width:768px) {
  .header__title {
-  font-size:30px
+  font-size:32px
  }
 }
 @media only screen and (min-width:1220px) {
  .header__title {
-  font-size:35px
+  font-size:42px
  }
 }
 @media only screen and (min-width:1024px) {
@@ -1809,5 +1809,5 @@ section {
  right:0;
  bottom:0;
  left:0;
- background:rgba(164, 132, 80, 0.8);
+ background: rgba(80, 152, 164, 0.5);
 }
