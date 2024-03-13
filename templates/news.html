@@ -7,28 +7,28 @@
 
 <section class="single">
 
-	<div class="wrap">
+    <div class="wrap">
 
-		<article class="news-entry">
+        <article class="news-entry">
 
-			  {% for news in this.pagination.items %}
-			
-						<div class="news__content-wrap">
-							<div class="news__content">
-								<h2 class="news__title"><a href="{{ news|url }}">{{ news.title }}</a></h2>
-								<p class="entry__subtitle">{{ news.author }} am {{ news.pub_date }}</p>
-								<p class="news__description">{{ news.headline }}</p>
-							</div>
-						</div>
-			
-			
-			  {% endfor %}
-			
-			
-			
-		</article>
+              {% for news in this.pagination.items %}
+            
+                        <div class="news__content-wrap">
+                            <div class="news__content">
+                                <h2 class="news__title"><a href="{{ news|url }}">{{ news.title }}</a></h2>
+                                <p class="entry__subtitle">{{ news.author }} am {{ news.pub_date }}</p>
+                                <p class="news__description">{{ news.headline }}</p>
+                            </div>
+                        </div>
+            
+            
+              {% endfor %}
+            
+            
+            
+        </article>
 
-	</div>
+    </div>
 
 </section>
 
@@ -36,23 +36,23 @@
 
 <section class="pagination">
 
-	<div class="wrap">
-		
-{% if this.pagination.has_prev %}		
-		<a href="{{ this.pagination.prev|url }}" class="button pagination__prev">
+    <div class="wrap">
+        
+{% if this.pagination.has_prev %}
+        <a href="{{ this.pagination.prev|url }}" class="button pagination__prev">
       <i class="fa fa-arrow-left" aria-hidden="true"></i>
       <span> zurück </span>
     </a>
 {% endif %}
-		
-{% if this.pagination.has_next %}		
-		<a href="{{ this.pagination.next|url }}" class="button pagination__next">
+        
+{% if this.pagination.has_next %}
+        <a href="{{ this.pagination.next|url }}" class="button pagination__next">
       <span>weiter </span>
       <i class="fa fa-arrow-right" aria-hidden="true"></i>
     </a>
 {% endif %}
 
-	</div>
+    </div>
 
 </section>
 
