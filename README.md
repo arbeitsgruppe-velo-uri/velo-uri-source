@@ -20,7 +20,7 @@ lektor server
 ## Build
 
 ```
-activate velo-uri_lektor_env
+conda activate velo-uri_lektor_env
 lektor quickstart
 lektor server
 lektor build -O temp
